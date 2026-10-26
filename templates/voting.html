@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Voting Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h2>Cast Your Vote</h2>
+
+<form action="/vote" method="POST">
+
+<label>
+<input type="radio" name="candidate" value="General Secretary" required>
+Candidate A
+</label>
+
+<br><br>
+
+<label>
+<input type="radio" name="candidate" value="Cultural Secretary">
+Candidate B
+</label>
+
+<br><br>
+
+<label>
+<input type="radio" name="candidate" value="Sports Secretary">
+Candidate C
+</label>
+
+<br><br>
+
+<label>
+<input type="radio" name="candidate" value="Discipline Secretary">
+Candidate D
+</label>
+
+<br><br>
+
+<label>
+<input type="radio" name="candidate" value="Class Representative (CR)">
+Candidate E
+</label>
+
+<br><br>
+
+<button type="submit">
+Submit Vote
+</button>
+
+</form>
+
+<br>
+
+<a class="btn" href="/result">
+View Result
+</a>
+
+</div>
+
+</body>
+</html>
